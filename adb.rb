@@ -10,8 +10,8 @@ class Adb < Formula
   # depends_on "cmake" => :build
 
   def install
-    bin.install "adb"
-    mv bin/"adb-darwin", bin/"adb"
+    ls
+    bin.install "adb-darwin"
   end
 
   test do
