@@ -1,27 +1,16 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class Adb < Formula
-  desc "Airdb Development Builder"
-  homepage "https://github.com/airdb/adb/releases/latest"
-  url "https://github.com/airdb/adb/archive/v1.1.0.tar.gz"
+class Tellme < Formula
+  desc "a cli tool to get information."
+  homepage "https://github.com/idoubi/tellme"
+  url "https://github.com/idoubi/tellme/archive/v0.1.0.tar.gz"
+  sha256 "b0c14c0e9f02e065917262a7c0d16e205097cc4d10c01e03ad93b4cd737cf81d"
 
-  # depends_on "cmake" => :build
+  depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", "main.go", bin/"tellme"
+    system "go", "build", "-o", bin/"tellme"
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test adb`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
     system "false"
   end
 end
