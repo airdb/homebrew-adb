@@ -3,14 +3,13 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Adb < Formula
   desc "Airdb Development Builder"
-  homepage "https://github.com/airdb/adb/releases/latest/download/adb-darwin-x64.zip"
-  url "https://github.com/airdb/adb/releases/latest/download/adb-darwin-amd64.zip"
-  sha256 "8f2ececa7bab6ce1a7e8628217d9234fddf57d2f9b2c1e2d1c4a4483a740c2d7"
+  homepage "https://github.com/airdb/adb/releases/latest"
+  url "https://github.com/airdb/adb/archive/v1.1.0.tar.gz"
 
   # depends_on "cmake" => :build
 
   def install
-    bin.install "adb-darwin"
+    system "go", "build", "-o", bin/"tellme"
   end
 
   test do
