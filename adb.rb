@@ -9,7 +9,7 @@ class Adb < Formula
   # depends_on "cmake" => :build
 
   def install
-    system "go", "build", "-o", "main.go" bin/"tellme"
+    system "go", "build", "-o", "main.go", bin/"tellme"
   end
 
   test do
