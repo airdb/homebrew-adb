@@ -1,4 +1,4 @@
-class Tellme < Formula
+class Adb < Formula
   desc "a cli tool to get information."
   homepage "https://github.com/idoubi/tellme"
   url "https://github.com/idoubi/tellme/archive/v0.1.0.tar.gz"
