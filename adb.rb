@@ -3,10 +3,10 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Adb < Formula
   desc "Airdb Development Builder"
-  homepage "https://github.com/airdb/adb/releases/latest/download/adb-linux-x64.zip"
-  version "1.1.0"
-  url "https://github.com/airdb/adb/releases/download/v1.1.0/adb-darwin-amd64.zip"
-  sha256 "8f2ececa7bab6ce1a7e8628217d9234fddf57d2f9b2c1e2d1c4a4483a740c2d7"
+  homepage "https://github.com/airdb/adb/releases/"
+  #url "https://github.com/airdb/adb/releases/download/v1.3.0/adb-darwin-amd64.zip"
+  url "https://github.com/airdb/adb/releases/latest/download/adb-darwin-amd64.zip"
+  sha256 "2c73f076ff869c02378bc1c280ad4fcaeb89662f3a4604c247103cf13762eb88"
 
   # depends_on "cmake" => :build
 

@@ -14,3 +14,17 @@ brew tap aidb/taps
 ```
 brew install adb
 ```
+
+3. Edit formula
+
+```
+brew edit airdb/taps/adb
+```
+
+or
+
+```
+vim /usr/local/Homebrew/Library/Taps/airdb/homebrew-taps/adb.rb
+```
+
+4. U
