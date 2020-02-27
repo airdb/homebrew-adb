@@ -4,8 +4,9 @@
 class Adb < Formula
   desc "Airdb Development Builder"
   homepage "https://github.com/airdb/adb/releases/"
-  #url "https://github.com/airdb/adb/releases/download/v1.3.0/adb-darwin-amd64.zip"
-  url "https://github.com/airdb/adb/releases/latest/download/adb-darwin-amd64.zip"
+  version "1.4.0"
+  #url "https://github.com/airdb/adb/releases/latest/download/adb-darwin-amd64.zip"
+  url "https://github.com/airdb/adb/releases/download/v1.4.0/adb-darwin-amd64.zip"
   sha256 "2c73f076ff869c02378bc1c280ad4fcaeb89662f3a4604c247103cf13762eb88"
 
   # depends_on "cmake" => :build
