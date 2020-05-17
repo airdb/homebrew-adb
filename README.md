@@ -3,22 +3,26 @@ Airdb Homebrew Taps
 
 ## Installation
 
-1. Add tap source
+1. Install tools
 
 ```
 brew tap aidb/taps
-```
-
-2. Install tools
-
-```
 brew install adb
+
+or
+
+brew install airdb/taps/adb
 ```
 
-3. Edit formula
+
+```
+```
+
+2. Edit formula
 
 ```
 brew edit airdb/taps/adb
+sha256sum  adb-darwin-amd64.zip
 ```
 
 or
@@ -26,5 +30,3 @@ or
 ```
 vim /usr/local/Homebrew/Library/Taps/airdb/homebrew-taps/adb.rb
 ```
-
-4. U
