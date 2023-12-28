@@ -1,14 +1,13 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class Osinit < Formula
+class Demo < Formula
   desc "Airdb Development Builder"
   homepage "https://github.com/airdb/homebrew-taps"
-  version "1.0.0"
+  version "2.0.0"
   #url "https://github.com/airdb/adb/releases/latest/download/adb-darwin-amd64.zip"
-  #url "https://github.com/airdb/adb/releases/download/v1.0.2/adb-darwin-amd64.zip"
+  #url "file:///opt/src/github.com/airdb/config"
   url "file:///tmp/config.tgz"
-  #sha256 "065a12316a1b769bff82b63a808bf93259cefbe2b8061d4a8b7df5ecf8ed97c3"
 
   # depends_on "cmake" => :build
 
@@ -27,9 +26,11 @@ class Osinit < Formula
 
   def install
     system "echo", "start install ===="
-    #bin.install "/opt/src/github.com/airdb/config/bar/bug.sh"
+    #bin.install "/opt/src/github.com/airdb/config/bar/bug.sh" 
     system "mkdir -p /tmp/hello "
-    bin.install "osinit.sh"
+    system "cp /opt/src/github.com/airdb/config/bar/bug.sh /tmp/hello"
+    system "make vim"
+    bin.install "bar/bug.sh"
   end
 
 
