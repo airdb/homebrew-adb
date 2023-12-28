@@ -5,13 +5,15 @@ Airdb Homebrew Taps
 
 1. Install tools
 
-```
+```bash
+## 安装 taps
 brew tap airdb/taps
-brew install adb
 
-or
+## 更新 taps
+brew update
 
-brew install airdb/taps/adb
+## 安装taps 下的软件包
+brew install airdb/taps/osinit
 ```
 
 

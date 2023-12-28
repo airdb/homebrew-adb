@@ -13,6 +13,7 @@ class Osinit < Formula
 
   def install
     echo "yes, start install"
+    bin.install "bar/bug"  tmp/bug
     #bin.install "adb-darwin"
     #mv bin/"adb-darwin", bin/"adb"
   end
