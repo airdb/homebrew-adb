@@ -7,7 +7,7 @@ class Osinit < Formula
   version "2.0.0"
   #url "https://github.com/airdb/adb/releases/latest/download/adb-darwin-amd64.zip"
   #url "https://github.com/airdb/adb/releases/download/v1.0.2/adb-darwin-amd64.zip"
-  url "file:///opt/src/github.com/airdb/config.git"
+  url "file:///opt/src/github.com/airdb/config"
 
   # depends_on "cmake" => :build
 
