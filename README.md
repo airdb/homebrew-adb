@@ -6,7 +6,7 @@ Airdb Homebrew Taps
 1. Install tools
 
 ```
-brew tap aidb/taps
+brew tap airdb/taps
 brew install adb
 
 or
