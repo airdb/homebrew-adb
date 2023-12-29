@@ -27,3 +27,7 @@ reinstall: ## Reinstall brew package
 
 install: ## Install brew package
 	brew install airdb/taps/${PACKAGE}
+
+info: ## Package information
+	brew info airdb/taps/${PACKAGE}
+	brew list airdb/taps/${PACKAGE}
